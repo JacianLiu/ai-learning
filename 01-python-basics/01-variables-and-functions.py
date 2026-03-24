@@ -33,6 +33,8 @@ print(h)
 
 
 def bmi(weight: float, height: float) -> float:
+
+    # 避免函数内的变量和函数名一样
     result = weight / pow(height, 2)
 
     if result < 18.5:
