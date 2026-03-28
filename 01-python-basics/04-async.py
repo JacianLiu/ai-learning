@@ -62,7 +62,7 @@ async def translate(word: str) -> str:
     # is 对比地址值；== 对比值
     if res is None:
         return f"{word} 未找到"
-    return res
+    return f"{word} -> {res}"
 
 async def batch_translate(words: list) -> None:
     tasks = [translate(w) for w in words]
